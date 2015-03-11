@@ -2,8 +2,8 @@
 
 ### 1.0.0
 **Improvement**   
-- Better git posting with PlayMaker Utils as SubModule  
-- Comply with Ecosysteme ChangeLog and versionning system  
+- Better git hosting with PlayMaker Utils as SubModule  
+- Comply with Ecosystem ChangeLog and versionning system  
 
 
 ###0.9.9
