@@ -3,6 +3,8 @@
 ### 1.0.1
 **Fix**
 - Fixed ArrayListSendEventToGameObjects only sending to owner instead of GamObjects in the list
+- Safer actions when fsmvar not defined
+
 
 
 ### 1.0.0
