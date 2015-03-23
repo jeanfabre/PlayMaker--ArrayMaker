@@ -1,5 +1,10 @@
 #ArrayMaker Change log
 
+### 1.0.1
+**Fix**
+- Fixed ArrayListSendEventToGameObjects only sending to owner instead of GamObjects in the list
+
+
 ### 1.0.0
 **Improvement**   
 - Better git hosting with PlayMaker Utils as SubModule  
@@ -11,7 +16,7 @@
 **New**  
 - MIT License Addition
 
-**Fix:**   
+**Fix**   
 - Windows Phone compatibility work in progress, with extensions for ArrayList LastIndexOf and manual snapshots for lists copies and removal of commented lines giving a hard time to the compiler  
 - easySave addon HashTableEasyLoad action  
 - texture usage in EasySave sample to use it's own texture set to read write properly.
@@ -19,7 +24,7 @@
 
 
 ###0.9.8
-**Issue:**  
+**Issue**  
 - removed undo when adding proxies to selection, just not finding the right way to do a consistent behavior... and it created obsolete warnings on 4.x
 
 **New**   

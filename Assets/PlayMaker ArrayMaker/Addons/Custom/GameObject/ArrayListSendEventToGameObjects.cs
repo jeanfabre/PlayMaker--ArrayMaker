@@ -85,7 +85,7 @@ namespace HutongGames.PlayMaker.Actions
 			FsmOwnerDefault owner = new FsmOwnerDefault();
 			owner.OwnerOption = OwnerDefaultOption.SpecifyGameObject;
 			owner.GameObject = new FsmGameObject();
-			owner.GameObject.Value = this.Owner;
+			owner.GameObject.Value = _go;
 			_eventTarget.gameObject = owner;
 			_eventTarget.target = FsmEventTarget.EventTarget.GameObject;	
 				
