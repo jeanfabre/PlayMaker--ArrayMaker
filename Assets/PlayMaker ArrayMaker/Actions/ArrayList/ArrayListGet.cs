@@ -67,6 +67,10 @@ namespace HutongGames.PlayMaker.Actions
 			if (! isProxyValid())
 				return;
 		
+			if (result.IsNone)
+			{
+				return;
+			}
 			
 			object element = null;
 			
