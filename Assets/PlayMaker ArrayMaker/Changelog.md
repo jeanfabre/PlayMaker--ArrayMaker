@@ -2,7 +2,10 @@
 
 ### 1.0.3
 **New**  
-- New ArrayListActivateGameObjects  
+- New ArrayListActivateGameObjects
+
+**Improvement**  
+- Get the variable's index in ArrayListAdd ( thanks to [dudebxl](http://hutonggames.com/playmakerforum/index.php?topic=10012.msg32820#new) from PlayMaker forum)
 
 ### 1.0.2
 **Fix**  

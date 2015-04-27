@@ -31,6 +31,11 @@ namespace HutongGames.PlayMaker.Actions
 		[RequiredField]
 		[Tooltip("The variable to add.")]
 		public FsmVar variable;
+
+		[ActionSection("Result")]
+		[UIHint(UIHint.Variable)]
+		[Tooltip("The index it was added at")]
+		public FsmInt index;
 		
 		
 		
@@ -38,8 +43,8 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			gameObject = null;
 			reference = null;
-			
 			variable = null;
+			index = null;
 		}
 		
 		
@@ -51,14 +56,15 @@ namespace HutongGames.PlayMaker.Actions
 			
 			Finish();
 		}
-		
-		
+
 		public void AddToArrayList()
 		{
 			if (! isProxyValid() ) 
 				return;
 			
 			proxy.Add(PlayMakerUtils.GetValueFromFsmVar(Fsm,variable),variable.Type.ToString());
+
+			index.Value = proxy.arrayList.Count -1;
 		}
 		
 		
