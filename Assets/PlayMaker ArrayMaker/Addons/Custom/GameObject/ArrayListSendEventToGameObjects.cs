@@ -53,13 +53,12 @@ namespace HutongGames.PlayMaker.Actions
 		public override void OnEnter()
 		{
 
-			if (! SetUpArrayListProxyPointer(Fsm.GetOwnerDefaultTarget(gameObject),reference.Value) )
+			if (SetUpArrayListProxyPointer(Fsm.GetOwnerDefaultTarget(gameObject),reference.Value) )
 			{
-				Finish();
+				DoSendEvent();
 			}
-			
-			DoSendEvent();
 
+			Finish ();
 		}
 
 		void DoSendEvent()

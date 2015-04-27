@@ -1,7 +1,15 @@
 #ArrayMaker Change log
 
+### 1.0.3
+**New**  
+- New ArrayListActivateGameObjects  
+
+### 1.0.2
+**Fix**  
+- Fixed ArrayListSendEventToGameObjects Finish() call
+
 ### 1.0.1
-**Fix**
+**Fix**  
 - Fixed ArrayListSendEventToGameObjects only sending to owner instead of GamObjects in the list
 - Safer actions when fsmvar not defined
 
