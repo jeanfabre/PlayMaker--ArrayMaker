@@ -1,4 +1,4 @@
-//	(c) Jean Fabre, 2011-2013 All rights reserved.
+//	(c) Jean Fabre, 2011-2015 All rights reserved.
 //	http://www.fabrejean.net
 
 // INSTRUCTIONS

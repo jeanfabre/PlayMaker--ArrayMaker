@@ -1,4 +1,4 @@
-//	(c) Jean Fabre, 2011-2013 All rights reserved.
+//	(c) Jean Fabre, 2011-2015 All rights reserved.
 //	http://www.fabrejean.net
 
 // INSTRUCTIONS
@@ -117,8 +117,8 @@ namespace HutongGames.PlayMaker.Actions
 		{
 			if(web.isError)
 			{
-				errorMessage = web.error;
-				errorCode = web.errorCode;
+				errorMessage.Value = web.error;
+				errorCode.Value = web.errorCode;
 				Fsm.Event(isError);
 				Finish();
 			}
