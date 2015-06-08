@@ -1,1 +1,1 @@
-ArrayMaker support for Easy Save support for v2.54
+ArrayMaker support for Easy Save support for v2.6.2
