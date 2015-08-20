@@ -60,6 +60,7 @@ namespace HutongGames.PlayMaker.Actions
 		[Tooltip("Where any errors thrown will be stored. Set this to a variable, or leave it blank.")]
 		public FsmString errorMessage = "";
 		[Tooltip("Where any error codes thrown will be stored. Set this to a variable, or leave it blank.")]
+		[UIHint(UIHint.Variable)]
 		public FsmString errorCode = "";
 		
 		private ES2Web web = null;
@@ -77,7 +78,7 @@ namespace HutongGames.PlayMaker.Actions
 			urlToPHPFile = "http://www.mysite.com/ES2.php";
 			web = null;
 			errorMessage = "";
-			errorCode = "";
+			errorCode = null;
 		}
 		
 			

@@ -1,5 +1,13 @@
 #ArrayMaker EasySave2 Change log
 
+###1.0.2
+**Update**  
+- Support for EasySave2 v2.6.7  
+
+**Fix**    
+- errorMessage property on upload and download actions and  only set to accept variables  
+
+
 ###1.0.1
 **Update**  
 - Support for EasySave2 v2.6.2
