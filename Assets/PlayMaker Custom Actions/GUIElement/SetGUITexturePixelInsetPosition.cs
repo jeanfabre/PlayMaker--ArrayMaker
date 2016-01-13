@@ -18,7 +18,9 @@ namespace HutongGames.PlayMaker.Actions
 		 public FsmBool AsIncrement;
 		
 		 public bool everyFrame;
-		
+
+		GUITexture _guiTexture;
+
 		 public override void Reset()
 		 {
 			 gameObject = null;
@@ -45,9 +47,15 @@ namespace HutongGames.PlayMaker.Actions
 		 void DoGUITexturePixelInsetPosition()
 		 {
 			 GameObject go = Fsm.GetOwnerDefaultTarget(gameObject);
-			 if (go != null && go.guiTexture != null)
+
+			if (go !=null)
+			{
+				_guiTexture = go.GetComponent<GUITexture>();
+			}
+
+			if (_guiTexture != null)
 			 {
-				 Rect pixelInset = go.guiTexture.pixelInset;
+				Rect pixelInset = _guiTexture.pixelInset;
 				
 				 if (AsIncrement.Value == true){
 					 pixelInset.x += PixelInsetX.Value;
@@ -56,7 +64,7 @@ namespace HutongGames.PlayMaker.Actions
 					 pixelInset.x = PixelInsetX.Value;
 					 pixelInset.y = PixelInsetY.Value;	
 				 }
-				 go.guiTexture.pixelInset = pixelInset;
+				_guiTexture.pixelInset = pixelInset;
 			 }			
 		 }
 	 }
