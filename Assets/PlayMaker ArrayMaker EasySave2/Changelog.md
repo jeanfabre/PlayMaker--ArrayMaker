@@ -1,5 +1,12 @@
 #ArrayMaker EasySave2 Change log
 
+###1.0.3  26/08/2015 
+**Update**  
+- Support for EasySave2 v2.7.1 
+**Fix**    
+- ES2SaveValue and ES2LoadValue / char issue when not tag is set  
+
+
 ###1.0.2  26/08/2015 
 **Update**  
 - Support for EasySave2 v2.6.7  
