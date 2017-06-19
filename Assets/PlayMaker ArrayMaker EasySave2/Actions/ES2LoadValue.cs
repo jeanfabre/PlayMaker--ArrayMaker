@@ -67,7 +67,7 @@ namespace HutongGames.PlayMaker.Actions
 					string _fullFile = file;
 					if (!tags[i].IsNone)
 					{
-						_fullFile = _fullFile+"/"+tag;
+						_fullFile = _fullFile+tag;
 					}
 
 					switch (fsmVar.Type) {

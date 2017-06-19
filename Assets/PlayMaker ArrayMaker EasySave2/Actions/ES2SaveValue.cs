@@ -56,7 +56,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnEnter()
 		{
-			string file = saveFile.Value+"?tag="+prefixTag;
+			string file = saveFile.Value+"?tag="+prefixTag.Value;
 				
 			for(int i = 0; i<tags.Length;i++){
 				if(!tags[i].IsNone || !tags[i].Value.Equals("")) 
@@ -68,7 +68,7 @@ namespace HutongGames.PlayMaker.Actions
 					string _fullFile = file;
 					if (!tags[i].IsNone)
 					{
-						_fullFile = _fullFile+"/"+tag;
+						_fullFile = _fullFile+tag;
 					}
 
 					switch (fsmVar.Type) {
