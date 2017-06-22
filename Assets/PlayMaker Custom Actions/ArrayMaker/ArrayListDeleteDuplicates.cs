@@ -103,8 +103,7 @@ namespace HutongGames.PlayMaker.Actions
 			}
 		}
 
-			public void SortOnDelete(){
-			object elementTemp = proxy.arrayList[0];
+		public void SortOnDelete(){
 			var varTemp = proxy.preFillType.ToString();
 	
 RESTART:
@@ -248,7 +247,6 @@ RESTART:
 				proxy.arrayList.Sort();
 			}
 
-			object elementTemp = proxy.arrayList[0];
 			var varTemp = proxy.preFillType.ToString();
 
 
@@ -392,7 +390,7 @@ IGNORE:
 						}
 						
 						else {
-							int indexOfResult = PlayMakerUtils_Extensions.IndexOf(proxy.arrayList,element_b);
+
 							element_b = PlayMakerUtils.GetValueFromFsmVar(this.Fsm,null);
 							proxy.arrayList[atIndex_iplus] = element_b;
 						}
